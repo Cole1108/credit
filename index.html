@@ -3,67 +3,170 @@
 <head>
   <title>Cat Boxes</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      text-align: center;
+      background-color: #2CBB78;
+      padding: 10px;
+    }
+    
     .box {
       display: inline-block;
-      width: 150px;
+      width: 180px;
+      height: 250px;
       text-align: center;
-      margin: 5px;
+      margin: 15px;
+      border-radius: 10px;
+      position: relative;
+      background-color: lightgray;
+      overflow: hidden;
     }
     
     .box img {
       max-width: 100%;
-      height: auto;
+      max-height: 160px;
       display: block;
-      margin: 0 auto;
+      margin: 15px auto 0;
+    }
+    
+    .text1,
+    .text2 {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      font-family: 'Comic Sans MS', cursive;
+    }
+    
+    .text1 {
+      top: 190px;
+    }
+    
+    .text2 {
+      bottom: 20px;
+    }
+    
+    /* Remove box outline */
+    .box {
+      outline: none;
+      border: none;
+    }
+    
+    /* Top right corner buttons */
+    .buttons {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    
+    .button {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: lightgray;
+      margin-right: 5px;
+      cursor: pointer;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    
+    .title {
+      font-size: 32px;
+      color: white;
+      margin-top: 10px;
+    }
+    
+    /* Responsive layout */
+    @media screen and (max-width: 900px) {
+      .box {
+        width: 150px;
+        height: 210px;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .box {
+        width: 120px;
+        height: 170px;
+      }
+      
+      .title {
+        font-size: 24px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <img src="cat.jpg" alt="Cat">
-    <br>
-    <input type="text" value="Hi">
+  <div class="container">
+    <div class="buttons">
+      <a href="https://www.example1.com" class="button" style="background-image: url('https://media.discordapp.net/attachments/995351490472464494/1130151146539978752/discord-icon-2048x2048-wooh9l0j.png?width=585&height=585');"></a>
+      <a href="https://www.example2.com" class="button" style="background-image: url('https://media.discordapp.net/attachments/995351490472464494/1130151146539978752/discord-icon-2048x2048-wooh9l0j.png?width=585&height=585');"></a>
+      <a href="https://www.example3.com" class="button" style="background-image: url('https://media.discordapp.net/attachments/995351490472464494/1130151146539978752/discord-icon-2048x2048-wooh9l0j.png?width=585&height=585');"></a>
+    </div>
+    <h1 class="title">Cat Boxes</h1>
+    <div class="box">
+      <img src="https://tr.rbxcdn.com/e04978d68f92509335a53a612d7aab46/150/150/Image/Png" alt="Cat">
+      <div class="text1">First text box</div>
+      <div class="text2">Value: 500</div>
+    </div>
+    <!-- Repeat the box divs to create more boxes -->
+    <!-- Total of 7 boxes per line -->
+    
+    <div class="box">
+      <img src="https://tr.rbxcdn.com/e04978d68f92509335a53a612d7aab46/150/150/Image/Png" alt="Cat">
+      <div class="text1">First text box</div>
+      <div class="text2">Value: 500</div>
+    </div>
+    
+    <div class="box">
+      <img src="https://tr.rbxcdn.com/e04978d68f92509335a53a612d7aab46/150/150/Image/Png" alt="Cat">
+      <div class="text1">First text box</div>
+      <div class="text2">Value: 500</div>
+    </div>
+    
+    <div class="box">
+      <img src="https://tr.rbxcdn.com/e04978d68f92509335a53a612d7aab46/150/150/Image/Png" alt="Cat">
+      <div class="text1">First text box</div>
+      <div class="text2">Value: 500</div>
+    </div>
+    
+    <div class="box">
+      <img src="https://tr.rbxcdn.com/e04978d68f92509335a53a612d7aab46/150/150/Image/Png" alt="Cat">
+      <div class="text1">First text box</div>
+      <div class="text2">Value: 500</div>
+    </div>
+    
+    <div class="box">
+      <img src="https://tr.rbxcdn.com/e04978d68f92509335a53a612d7aab46/150/150/Image/Png" alt="Cat">
+      <div class="text1">First text box</div>
+      <div class="text2">Value: 500</div>
+    </div>
+    
+    <div class="box">
+      <img src="https://tr.rbxcdn.com/e04978d68f92509335a53a612d7aab46/150/150/Image/Png" alt="Cat">
+      <div class="text1">First text box</div>
+      <div class="text2">Value: 500</div>
+    </div>
+    
+    <div class="box">
+      <img src="https://tr.rbxcdn.com/e04978d68f92509335a53a612d7aab46/150/150/Image/Png" alt="Cat">
+      <div class="text1">First text box</div>
+      <div class="text2">Value: 500</div>
+    </div>
+    
+    <!-- Repeat the box divs to create more boxes -->
+    <!-- Total of 7 boxes per line -->
   </div>
-  <!-- Repeat the box divs to create more boxes -->
-  <!-- Total of 6 boxes per line -->
-
-  <div class="box">
-    <img src="cat.jpg" alt="Cat">
-    <br>
-    <input type="text" value="Hi">
-  </div>
-
-  <div class="box">
-    <img src="cat.jpg" alt="Cat">
-    <br>
-    <input type="text" value="Hi">
-  </div>
-
-  <div class="box">
-    <img src="cat.jpg" alt="Cat">
-    <br>
-    <input type="text" value="Hi">
-  </div>
-
-  <div class="box">
-    <img src="cat.jpg" alt="Cat">
-    <br>
-    <input type="text" value="Hi">
-  </div>
-
-  <div class="box">
-    <img src="cat.jpg" alt="Cat">
-    <br>
-    <input type="text" value="Hi">
-  </div>
-
-  <div class="box">
-    <img src="cat.jpg" alt="Cat">
-    <br>
-    <input type="text" value="Hi">
-  </div>
-
-  <!-- Repeat the box divs to create more boxes -->
-  <!-- Total of 6 boxes per line -->
 </body>
 </html>
