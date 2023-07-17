@@ -24,7 +24,7 @@
     .box {
       display: inline-block;
       width: 180px;
-      height: 250px;
+      height: 350px; /* Increased height for accommodating the text */
       text-align: center;
       margin: 15px;
       border-radius: 10px;
@@ -34,9 +34,9 @@
     }
     
     .box img {
-      width: 100%; /* Change to '100%' */
-      height: 100%; /* Change to '100%' */
-      object-fit: cover; /* Maintain aspect ratio */
+      width: 100%;
+      height: 60%; /* Adjusted height to fit the image within the box */
+      object-fit: cover;
       display: block;
       margin: 15px auto 0;
     }
@@ -52,7 +52,7 @@
     }
     
     .text1 {
-      top: 170px;
+      top: 70%; /* Adjusted position for the first text */
     }
     
     .text2 {
@@ -96,14 +96,14 @@
     @media screen and (max-width: 900px) {
       .box {
         width: 150px;
-        height: 210px;
+        height: 290px; /* Adjusted height for responsive layout */
       }
     }
     
     @media screen and (max-width: 600px) {
       .box {
         width: 120px;
-        height: 170px;
+        height: 230px; /* Adjusted height for responsive layout */
       }
       
       .title {
@@ -156,7 +156,7 @@
       <img src="https://media.discordapp.net/attachments/995351490472464494/1130231864796397718/blank-profile-picture-973460_1280.png?width=585&height=585" alt="Cat">
       <div class="text1">Contributer</div>
       <div class="text2">blank</div>
-     /div>
+     </div>
   </div>
 </body>
 </html>
